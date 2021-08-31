@@ -1,0 +1,73 @@
+<div  *ngIf="loader" class="loader-back">
+  <div class="loader" *ngIf="loader">
+    <mat-spinner value="100" strokeWidth="4" mode="indeterminate">
+    </mat-spinner>
+  </div>
+</div>
+<div id="laqua-nav" [@nav]="nav1">
+  <div>
+    <a  #aqua routerLink="aquarium" routerLinkActive="active">aquarium</a>
+    <a  #terra routerLink="terrarium" routerLinkActive="active"> terrarium</a>
+    <a   #fitting routerLink="feeding" routerLinkActive="active" >feeding</a>
+  </div>
+  <div class="cart">
+    <span matBadge="{{totalItems}}" matBadgeOverlap="false">
+         <fa-icon (click)="openDialog()" [icon]="cart"></fa-icon>
+    </span>
+  </div>
+</div>
+<div class="logo">
+  <a  routerLink="/" [@logo]="logo1">
+ <p>LaQua</p>
+  </a>
+</div>
+<div class="hamb" (click)="hambRotate()">
+  <span id="span1" [@hambOne]="hambOne1" ></span>
+  <span id="span2" [@hambSec]="hambSec1"></span>
+  <span id="span3" [@hambThi]="hambThi1"></span>
+</div>
+<mat-toolbar-row class="drop" [@drop]="drop1">
+  <a #marineF routerLink="marine" routerLinkActive="active" (click)="hambRotate()">marine fish</a>
+  <a #fresh>freshwater fish</a>
+  <a #iFish>i have a fish</a>
+  <a #acce>accessories</a>
+  <a #spec>special offer</a>
+  <a #aboutF>about</a>
+  <a #cont>contact</a>
+</mat-toolbar-row>
+<mat-toolbar-row id="section-1" [@section]="section1">
+  <div class="content-slider" [@section]="section1">
+    <input type="radio" id="banner1" class="sec-2-input" name="banner" checked>
+    <input type="radio" id="banner2" class="sec-2-input" name="banner">
+    <input type="radio" id="banner3" class="sec-2-input" name="banner">
+    <div class="slider">
+      <div id="top-banner-1" class="banner" [@section]="section1" >
+        <div class="banner-inner-wrapper">
+          <h1 #laqua>Welcome to LaQua</h1>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div id="top-banner-2" class="banner" [@section]="section1">
+        <div class="banner-inner-wrapper">
+          <h1>Quiet Friend</h1>
+          <div class="line"></div>
+          <div class="learn-more-button"><a href="#">find</a></div>
+        </div>
+      </div>
+      <div id="top-banner-3" class="banner" [@section]="section1">
+        <div class="banner-inner-wrapper">
+          <h1>Home</h1>
+          <div class="line"></div>
+          <div class="learn-more-button"><a href="#">see more</a></div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="controls" [@section]="section1">
+        <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span></label>
+        <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span></label>
+        <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span></label>
+      </div>
+    </nav>
+  </div>
+</mat-toolbar-row>

@@ -1,0 +1,44 @@
+<fa-icon mat-dialog-close id="close" [icon]="close"></fa-icon>
+<mat-toolbar-row *ngIf="productList.length == 0">
+  <div class="cart">
+    <p>Your Shopping Cart Is</p>
+    <p>Empty</p>
+    <button mat-dialog-close mat-button routerLink="marine" routerLinkActive="active">add products</button>
+  </div>
+</mat-toolbar-row>
+<div class="header" *ngIf="productList.length !== 0">
+  <h3>Item</h3>
+  <h3>Name</h3>
+  <h3>Price</h3>
+  <h3>Quantity</h3>
+</div>
+<div class="dialog-header" mat-dialog-content *ngFor="let item of productList">
+  <div class="dialog">
+    <img src="{{item.imgUrl}}">
+    <p id="name">{{item.name}}</p>
+    <p>{{item.price}} {{item.currency}}</p>
+    <div>
+      <button style="margin-right: -.5rem" (click)="plusItem(item)" mat-fab>
+        <fa-icon [icon]="plus"></fa-icon>
+      </button>
+      <p id="qty">{{item.qty}}</p>
+      <button style="margin-left: -.5rem" (click)="minusItem(item)" mat-fab>
+        <fa-icon [icon]="minus"></fa-icon>
+      </button>
+      <button  mat-fab (click)="removeItem(item)">
+        <fa-icon [icon]="trash"></fa-icon>
+      </button>
+    </div>
+  </div>
+  <mat-divider class="item-line"></mat-divider>
+</div>
+
+
+<div class="total" *ngIf="productList.length !== 0">
+  <div class="total-price"><p>Total:</p>
+    <p>{{grandTotal}}</p>
+    <p>₾</p></div>
+  <button mat-button mat-dialog-close routerLinkActive="active" routerLink="email">order</button>
+  <button mat-button (click)="removeAllItems()">clear cart</button>
+</div>
+

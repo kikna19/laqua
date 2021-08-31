@@ -1,0 +1,19 @@
+.mat-dialog-content {
+  padding: 0;
+  width: 65rem;
+  min-height: 40rem !important;
+  background-image: url("https://ae01.alicdn.com/kf/HTB1VAXvXTHuK1RkSndVq6xVwpXaW/Terrarium-Vivarium-Kit-With-Magnet-Latch-Water-Bowl-Substrate-Artificial-Plant-For-Gecko-Lizard-Snake-Tarantula.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: zoom-out;
+  fa-icon{
+    position: absolute;
+    right: .1rem;
+    top: .1rem !important;
+    cursor: pointer;
+    color: #071c26;
+    font-size: 1.5rem;
+  }
+}

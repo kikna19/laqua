@@ -1,0 +1,232 @@
+<mat-toolbar-row class="offer-header">
+  <h1 class="h1" #offerHeader>special offer</h1>
+</mat-toolbar-row>
+<mat-toolbar-row class="special-offer">
+  <div class="first-offer">
+    <a href="#" class="first-img">
+      <div id="first-imgg" #firstImg></div>
+    </a>
+    <a href="#" class="first-text" #firstText>Looking For a Betta Fish?</a>
+  </div>
+  <div class="second-offer">
+    <div class="second-first-ad">
+      <a href="#">
+        <img id="second-ad" #secondFirstImg
+             src="https://5.imimg.com/data5/SO/HJ/TB/SELLER-12142841/aquarium-fish-tank-500x500.jpg">
+      </a>
+      <a href="#" #secondFirstText>Brand New Product</a>
+    </div>
+
+    <div class="second-second-ad">
+      <a href="#">
+        <img id="third-ad" #secondSecondImg
+             src="https://www.thesprucepets.com/thmb/5gt7Ue6cos4JFTyC1QQ2IeVJNE0=/1398x1398/smart/filters:no_upscale()/Fisheseating-GettyImages-940731024-5c2814d2c9e77c0001b0ab83.jpg">
+      </a>
+      <a href="#" #secondSecondText>Right Type of Food</a>
+    </div>
+    <div class="second-third-ad">
+      <a href="#">
+        <img id="fourth-ad" #secondThirdImg
+             src="https://aquariumadviser.com/wp-content/uploads/2018/10/Rainbow-Shark.jpg">
+      </a>
+      <a href="#" #secondThirdText>70% OFF</a>
+    </div>
+  </div>
+</mat-toolbar-row>
+
+
+<mat-toolbar-row class="top-header">
+  <h1 class="h1">top beautiful fish</h1>
+</mat-toolbar-row>
+<mat-toolbar-row>
+  <mat-horizontal-stepper #stepper ngClass="{{'last-edited-step-' + stepper.selectedIndex }}">
+
+    <mat-step>
+      <ng-template matStepLabel>
+        <div id="fStepHeader" [@fStepHeader]="fStepHeader1" (mouseenter)="fStepHeaderE($event)"
+             (mouseleave)="fStepHeaderL($event)">5
+        </div>
+      </ng-template>
+      <div class="top-first">
+        <div>
+          <h2>french angel fish</h2>
+          <p>this fish lives primarily in the reefs around the Caribbean seas,
+            which is awesome because it means we get to see it here as well.
+            It lives in t rocks and reefs around here, and can frequently be found in the abandoned shipwrecks.
+            It’s a great fish to spot on a deep sea dive and it’s easy to spot with its distinctive blue head
+            and yellow spots all over its body.</p>
+        </div>
+        <img
+          src="https://i1.wp.com/mexican-fish.com/wp-content/uploads/F829-French-Angelfish-1.jpg?resize=570%2C452&ssl=1">
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        <div id="sStepHeader" [@sStepHeader]="sStepHeader1" (mouseenter)="sStepHeaderE($event)"
+             (mouseleave)="sStepHeaderL($event)">4
+        </div>
+      </ng-template>
+      <div class="top-second">
+        <div>
+          <h2>blueface angel fish</h2>
+          <p>in the species of angelfish, there are many that would qualify to be on this list, but the blueface
+            angelfish deserves its place here. It’s a particular fish that has a dizzying pattern on its side that
+            swirls and blends together in peculiar way. The head also features a bright eye spot that distinguishes
+            it from among other angelfish. Although it is normally found on the other side
+            of the world, there have been a few sighting in the reefs and wrecks of the Floridian coast..</p>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Pomacanthus_xanthometopon_2.jpg">
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        <div id="tStepHeader" [@tStepHeader]="tStepHeader1" (mouseenter)="tStepHeaderE($event)"
+             (mouseleave)="tStepHeaderL($event)">3
+        </div>
+      </ng-template>
+      <div class="top-third">
+        <div>
+          <h2>trigger fish</h2>
+          <p>this name actually encapsulates the 40 different species of closely related fish that all bear some
+            resemblance.
+            They come in bright colors and even in stark greys and whites. They can be great as a solitary tank fish,
+            but they
+            don’t work well in large tanks with many fish.
+            They can be notoriously ill-tempered. They have the remarkable ability among fishes to learn from previous
+            experiences.</p>
+        </div>
+        <img src="https://reefguide.org/pix/clowntriggerfish4.jpg">
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        <div id="foStepHeader" [@foStepHeader]="foStepHeader1" (mouseenter)="foStepHeaderE($event)"
+             (mouseleave)="foStepHeaderL($event)">2
+        </div>
+      </ng-template>
+      <div class="top-fourth">
+        <div>
+          <h2>clown fish</h2>
+          <p>how could any list of beautiful fish be complete without the clownfish present? Because of the movie
+            Finding Nemo,
+            it’s become such a hot commodity that it’s getting harder and harder to find in fish stores. In the wild,
+            they are
+            quite numerous anywhere that anemone grows.
+            They partner with the anemone to provide nutrients to the plant while the plant cleans the fish from harmful
+            bacteria.</p>
+        </div>
+        <img src="https://i.pinimg.com/originals/50/e2/a0/50e2a0bdde0faadf63f337e32cd68b3e.jpg">
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        <div id="fiStepHeader" [@fiStepHeader]="fiStepHeader1" (mouseenter)="fiStepHeaderE($event)"
+             (mouseleave)="fiStepHeaderL($event)">1
+        </div>
+      </ng-template>
+      <div class="top-fifth">
+        <div>
+          <h2>mandarin fish</h2>
+          <p>the most colorful fish in the world is the mandarinfish. It’s a brightly lit, multi-colored fish that is
+            remarkable to see in the wild. Anybody would count it a lucky day to spot one of
+            these beauties. The name actually comes from the brightly-colored robes an Imperial Mandarin would wear.</p>
+        </div>
+        <img src="http://3.bp.blogspot.com/-LQUBKFiTdUc/VKG6CrQXlwI/AAAAAAAAAjg/9-_Se4jmwJE/s1600/zxCasdc.jpg">
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</mat-toolbar-row>
+
+<mat-toolbar-row class="litrage">
+  <div class="litrage-fish">
+    <h1 class="h1">fish details</h1>
+    <label for="fishH">Fish Height</label>
+    <input id="fishH" type="text" matInput placeholder="10 cm" [(ngModel)]="fishH">
+
+    <label for="fishW">Fish Width</label>
+    <input type="text" id="fishW" matInput placeholder="5 cm" [(ngModel)]="fishW">
+
+    <label for="fishWei">Fish Weight</label>
+    <input type="text" matInput id="fishWei" placeholder="50 g" [(ngModel)]="fishWei">
+    <button class="calculate" mat-button (click)="litrageCalculate()">Calculate</button>
+  </div>
+
+
+  <div class="litrage-aquarium">
+    <h1 class="h1">aquarium details</h1>
+    <div class="scene">
+      <div id="aqua">
+        <div class="aquarium aquarium-front">
+          <input class="front-height" placeholder="cm" [(ngModel)]="fHeight">
+          <input class="front-width" placeholder="cm" [(ngModel)]="fWidth">
+        </div>
+        <div class="aquarium aquarium-back">
+          <input class="back-height" placeholder="cm" [(ngModel)]="bHeight">
+          <input class="back-width" placeholder="cm" [(ngModel)]="bWidth">
+        </div>
+        <div class="aquarium aquarium-left">
+          <input class="left-height" placeholder="cm" [(ngModel)]="lHeight">
+          <input class="left-width" placeholder="cm" [(ngModel)]="lWidth">
+        </div>
+        <div class="aquarium aquarium-right">
+          <input class="right-height" placeholder="cm" [(ngModel)]="rHeight">
+          <input class="right-width" placeholder="cm" [(ngModel)]="rWidth">
+        </div>
+        <div class="aquarium aquarium-bottom">
+          <input class="bottom-height" placeholder="cm" [(ngModel)]="tHeight">
+          <input class="bottom-width" placeholder="cm" [(ngModel)]="tWidth">
+        </div>
+      </div>
+    </div>
+    <p id="control">
+      <label for="frontSide">
+        <input type="radio" id="frontSide" name="rotate-aqua-side" value="front" checked/>
+        <span></span>
+      </label>
+      <label>
+        <input type="radio" id="rightSide" name="rotate-aqua-side" value="right"/>
+        <span></span>
+      </label>
+      <label>
+        <input type="radio" id="backSide" name="rotate-aqua-side" value="back"/>
+        <span></span>
+      </label>
+      <label>
+        <input type="radio" id="leftSide" name="rotate-aqua-side" value="left"/>
+        <span></span>
+      </label>
+      <label>
+        <input type="radio" id="bottomSide" name="rotate-aqua-side" value="bottom"/>
+        <span></span>
+      </label>
+    </p>
+  </div>
+</mat-toolbar-row>
+
+<div class="email-cover">
+  <div class="email">
+    <div class="email-text">
+      <h3>buy favourite fish from our store</h3>
+      <p>Fill In the Blanks to Order</p>
+      <button routerLinkActive="active" routerLink="email" mat-button>
+        <p>fill in</p>
+      </button>
+    </div>
+  </div>
+  <div class="parallax"></div>
+</div>
+<div class="numb">
+  <div>
+    <h3>marine fish</h3>
+    <p [@fStepNmb]="fStepNmb1" id="fStepNmb"></p>
+  </div>
+  <div>
+    <h3>freshwater fish</h3>
+    <p [@sStepNmb]="sStepNmb1" id="sStepNmb"></p>
+  </div>
+  <div>
+    <h3>reptile</h3>
+    <p [@tStepNmb]="tStepNmb1" id="tStepNmb"></p>
+  </div>
+
+</div>

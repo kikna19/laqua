@@ -1,0 +1,18 @@
+<mat-toolbar-row class="marine-header">
+  <h1 #cardHeader>marine fish</h1>
+</mat-toolbar-row>
+<mat-toolbar-row class="marine">
+  <mat-card  *ngFor="let fish of marineFish"  >
+    <img src="{{fish.imgUrl}}">
+    <mat-card-content>
+      <p class="fish-name">{{fish.name}}</p>
+      <div class="fish-detail">
+        <p>{{fish.price}} {{fish.currency}}</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="handleProduct(fish)">add to cart</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-toolbar-row>
+

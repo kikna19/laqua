@@ -1,0 +1,88 @@
+<mat-toolbar-row class="order-header" >
+  <h2 #order>order details</h2>
+</mat-toolbar-row>
+
+<mat-toolbar-row>
+    <form [formGroup]="lForm">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input type="text" formControlName="email" matInput>
+        <mat-error *ngIf="lForm.get('email').hasError('required')">
+          Email is Required
+        </mat-error>
+        <mat-error *ngIf="lForm.get('email').hasError('email')">
+          Enter Email
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input type="text" matInput formControlName="name">
+        <mat-error *ngIf="lForm.get('name').hasError('required')">
+         Name is Required
+        </mat-error>
+        <mat-error *ngIf="lForm.get('name').hasError('minlength')">
+          Name min Length is 2
+        </mat-error>
+        <mat-error *ngIf="lForm.get('name').hasError('maxlength')">
+          Name max Length is 10
+        </mat-error>
+        <mat-error *ngIf="lForm.get('name').hasError('pattern')">
+          Name Must Contains Letters
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input type="text" matInput formControlName="username">
+        <mat-error *ngIf="lForm.get('username').hasError('required')">
+          Username is Required
+        </mat-error>
+        <mat-error *ngIf="lForm.get('username').hasError('minlength')">
+          Username min Length is 2
+        </mat-error>
+        <mat-error *ngIf="lForm.get('username').hasError('maxlength')">
+          Username max Length is 20
+        </mat-error>
+        <mat-error *ngIf="lForm.get('username').hasError('pattern')">
+          Username Must Contains Letters
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field floatLabel="always">
+        <mat-label>Mobile</mat-label >
+        <input type="text" matInput formControlName="mobile" placeholder="555-55-55-55">
+        <span matPrefix>+995&nbsp;</span>
+        <mat-error *ngIf="lForm.get('mobile').hasError('required')">
+          Mobile is Required
+        </mat-error>
+        <mat-error *ngIf="lForm.get('mobile').hasError('pattern')">
+          Mobile Must Be Like The Format
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>City</mat-label>
+        <mat-select formControlName="city">
+        <mat-option *ngFor="let citi of cities" [value]="citi">{{citi}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="lForm.get('city').hasError('required')">
+          City Must Be Chosen
+        </mat-error>
+      </mat-form-field>
+     <mat-form-field>
+       <mat-label>Address</mat-label>
+       <input matInput type="text" formControlName="address" placeholder="Chavchavadze-10">
+       <span matPrefix>St.&nbsp;</span>
+       <mat-error *ngIf="lForm.get('address').hasError('required')">
+         Address is Required
+       </mat-error>
+       <mat-error *ngIf="lForm.get('address').hasError('minlength')">
+        Address min Length is 2
+       </mat-error>
+       <mat-error *ngIf="lForm.get('address').hasError('maxlength')">
+         Address max Length is 20
+       </mat-error>
+       <mat-error *ngIf="lForm.get('address').hasError('pattern')">
+         Address Must Contains Letters
+       </mat-error>
+     </mat-form-field>
+<button mat-button>order</button>
+    </form>
+</mat-toolbar-row>

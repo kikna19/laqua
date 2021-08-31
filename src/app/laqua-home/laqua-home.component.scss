@@ -1,0 +1,1968 @@
+.offer-header {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 5rem;
+
+  h1 {
+    font-family: "Arial Black";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.special-offer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35rem;
+
+  .first-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 45%;
+    height: 100%;
+
+    .first-img {
+      margin-left: 7rem;
+      height: 32.7rem;
+      width: 80%;
+
+      div {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background: url("https://image.freepik.com/free-photo/betta-fish-siamese-fighting-fish-isolated-black-background-fine-art-design-concept_35927-367.jpg") no-repeat center;
+      }
+
+    }
+
+    .first-text {
+      margin-top: .1rem;
+      margin-left: 7rem;
+      text-decoration: none;
+      font-family: Verdana;
+      color: white;
+    }
+
+  }
+
+  .second-offer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 100%;
+
+    img {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .second-first-ad {
+      margin-left: 5rem;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        font-family: Verdana;
+        color: white;
+      }
+    }
+
+    .second-second-ad {
+      margin-left: 5rem;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        font-family: Verdana;
+        color: white;
+      }
+    }
+
+    .second-third-ad {
+      margin-left: 5rem;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        font-family: Verdana;
+        color: white;
+      }
+    }
+  }
+
+}
+
+.top-header {
+  margin-top: 7rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    font-family: "Arial Black";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+mat-horizontal-stepper {
+
+  background-color: #071c26;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+::ng-deep .mat-step-header {
+  width: 2.6rem;
+  outline: none;
+  padding-right: .5rem;
+}
+
+::ng-deep .mat-step-icon {
+  display: none;
+}
+
+::ng-deep .mat-step-header[aria-selected="true"] {
+  & #fStepHeader {
+    border: .1rem solid #b8912f;
+  }
+
+  & #sStepHeader {
+    border: .1rem solid #b8912f;
+  }
+
+  & #tStepHeader {
+    border: .1rem solid #b8912f;
+  }
+
+  & #foStepHeader {
+    border: .1rem solid #b8912f;
+  }
+
+  & #fiStepHeader {
+    border: .1rem solid #b8912f;
+  }
+}
+
+#stepNmb {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 95%;
+  position: absolute;
+  top: 113.5rem;
+  padding-left: 2.2rem;
+
+  p:nth-child(2) {
+    margin-left: 18.5rem;
+  }
+
+  p:nth-child(3) {
+    margin-left: 18.6rem;
+  }
+
+  p:nth-child(4) {
+    margin-left: 18.6rem;
+  }
+
+  p:nth-child(5) {
+    margin-left: 18.6rem;
+  }
+}
+
+
+#fStepHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .1rem solid black;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  font-family: "Arial Black";
+}
+
+
+#sStepHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .1rem solid black;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  font-family: "Arial Black";
+}
+
+#tStepHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .1rem solid black;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  font-family: "Arial Black";
+}
+
+#foStepHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .1rem solid black;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  font-family: "Arial Black";
+}
+
+#fiStepHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .1rem solid black;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  font-family: "Arial Black";
+}
+
+@mixin changeLineColour($index) {
+  ::ng-deep .mat-horizontal-stepper-header {
+    & + ::ng-deep .mat-stepper-horizontal-line:nth-child(#{$index}) {
+      background-color: #b8912f !important;
+      transition: all 1s;
+    }
+  }
+}
+
+.last-edited-step-1 {
+  @include changeLineColour(2);
+}
+
+.last-edited-step-2 {
+  @include changeLineColour(2);
+  @include changeLineColour(4);
+}
+
+.last-edited-step-3 {
+  @include changeLineColour(2);
+  @include changeLineColour(4);
+  @include changeLineColour(6);
+}
+
+.last-edited-step-4 {
+  @include changeLineColour(2);
+  @include changeLineColour(4);
+  @include changeLineColour(6);
+  @include changeLineColour(8)
+}
+
+.top-first,
+.top-second,
+.top-third,
+.top-fourth,
+.top-fifth {
+  display: flex;
+  align-items: start;
+  padding-top: 2rem;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 30rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5.5rem;
+    width: 40%;
+
+    h2 {
+      color: #b8912f;
+      text-transform: uppercase;
+      font-family: "Mukta Mahee";
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-family: Skia;
+      font-size: 1.1rem;
+      text-indent: 1rem;
+    }
+
+    p:first-letter {
+      color: #b8912f;
+      text-transform: uppercase;
+      font-family: Century Gothic;
+      font-size: 1.6rem;
+    }
+  }
+
+  img {
+    width: 40%;
+    margin-right: 5.5rem;
+
+  }
+
+}
+
+.litrage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 35rem;
+  margin-bottom: 5rem;
+
+  .litrage-fish {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 70%;
+    width: 40%;
+
+    label {
+      color: rgba(255, 255, 255, 0.51);
+      font-family: "Mukta Mahee";
+      font-size: 1.2rem;
+      margin-bottom: .4rem;
+    }
+
+    h1 {
+      font-family: "Arial Black";
+      color: white;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .litrage-aquarium {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 5rem;
+    height: 85%;
+    width: 50%;
+
+    h1 {
+      font-family: "Arial Black";
+      color: white;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  #fishH,
+  #fishW,
+  #fishWei {
+    font-size: 1rem;
+    font-family: "Mukta Mahee";
+    padding-left: 1.5rem;
+    width: 6rem;
+    height: 2rem;
+    outline: none;
+    margin-bottom: 2rem;
+    background-color: hsla(180, 100%, 50%, 0.7);
+  }
+
+  .calculate {
+    background-color: rgba(255, 255, 255, 0.51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 5rem;
+    font-family: "Mukta Mahee";
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+
+  .scene {
+    perspective: 100rem;
+  }
+
+  #aqua {
+    input::placeholder {
+      color: #071c26;
+
+    }
+
+    margin-left: -1rem;
+    margin-top: 3rem;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px);
+    transition: transform 1s;
+
+  }
+
+  .aquarium {
+    position: absolute;
+    font-size: 2rem;
+    border: .1rem solid black;
+    text-align: center;
+  }
+
+  .aquarium-front {
+    background: hsla(180, 100%, 50%, 0.7);
+    transform: rotateY(0deg) translateZ(2.6rem)
+  }
+
+  .aquarium-back {
+    background: hsla(180, 100%, 50%, 0.7);
+    transform: rotateY(180deg) translateZ(2.5rem)
+  }
+
+  .aquarium-left {
+    background: hsla(180, 100%, 50%, 0.7);
+    transform: rotateY(90deg) translateZ(10.55rem)
+  }
+
+  .aquarium-right {
+    background: hsla(180, 100%, 50%, 0.7);
+    transform: rotateY(-90deg) translateZ(9.55rem)
+  }
+
+  .aquarium-bottom {
+    background: hsla(180, 100%, 50%, 0.7);
+    transform: rotateX(-90deg) translateZ(120px)
+  }
+
+  .aquarium-front,
+  .aquarium-back {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .aquarium-left,
+  .aquarium-right {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 10rem;
+    width: 5rem;
+    left: 7rem;
+  }
+
+  .aquarium-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 20rem;
+    height: 5rem;
+  }
+
+  #aqua.show-front {
+    transform: translateZ(-50px) rotateY(0deg);
+  }
+
+  #aqua.show-back {
+    transform: translateZ(-50px) rotateY(-180deg);
+  }
+
+  #aqua.show-right {
+    transform: translateZ(-150px) rotateY(-90deg);
+  }
+
+  #aqua.show-left {
+    transform: translateZ(-150px) rotateY(90deg);
+  }
+
+  #aqua.show-bottom {
+    transform: translateZ(-100px) rotateX(90deg);
+  }
+}
+
+.front-height {
+  transform: rotateZ(-90deg);
+  height: 2rem;
+  font-size: .7rem;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  padding-left: 6rem;
+  margin-left: -3rem;
+}
+
+.front-width {
+  height: 2rem;
+  font-size: .7rem;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  padding-left: 2rem;
+  margin-left: -3rem;
+}
+
+.back-height {
+  transform: rotateZ(-90deg);
+  height: 2rem;
+  font-size: .7rem;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  padding-left: 6rem;
+  margin-left: -3rem;
+}
+
+.back-width {
+  height: 2rem;
+  font-size: .7rem;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  padding-left: 2rem;
+  margin-left: -3rem;
+}
+
+.left-height {
+  transform: rotateZ(-90deg);
+  margin-left: -2rem;
+  height: 2rem;
+  width: 4rem;
+  font-size: .7rem;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  background-color: transparent;
+  padding-left: 2rem;
+}
+
+.left-width {
+  width: 2.8rem;
+  height: 2rem;
+  font-size: .7rem;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  padding-left: 1rem;
+  margin-left: -3.5rem;
+  margin-top: 8rem;
+  padding-right: 1rem;
+  background-color: transparent;
+}
+
+.right-height {
+  transform: rotateZ(-90deg);
+  margin-left: -2rem;
+  height: 2rem;
+  width: 4rem;
+  font-size: .7rem;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  background-color: transparent;
+  padding-left: 2rem;
+}
+
+.right-width {
+  width: 2.8rem;
+  height: 2rem;
+  font-size: .7rem;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  padding-left: 1rem;
+  margin-left: -3.5rem;
+  margin-top: 8rem;
+  padding-right: 1rem;
+  background-color: transparent;
+}
+
+.bottom-height {
+  transform: rotateZ(-90deg);
+  margin-left: -2rem;
+  height: 2rem;
+  width: 4rem;
+  font-size: .7rem;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  background-color: transparent;
+  padding-left: 2rem;
+}
+
+.bottom-width {
+  height: 2rem;
+  font-size: .7rem;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  color: #071c26;
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+
+#control {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 3.1rem;
+    overflow: hidden;
+    padding-top: 1em;
+
+    span {
+      cursor: pointer;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 2rem;
+      background-color: rgba(255, 255, 255, 0.51);
+    }
+
+  }
+}
+
+.email-cover {
+  position: relative;
+  width: 100%;
+  height: 33rem;
+
+  .email {
+    border: 1rem;
+    border-top-style: solid;
+    border-top-color: #071c26;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    position: absolute;
+    top: -1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 99%;
+
+    .email-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        font-family: "Arial Black";
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-family: "Mukta Mahee";
+        color: #071c26;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        font-weight: 600;
+      }
+
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.6rem;
+        padding-bottom: 1rem;
+        height: 3rem;
+        width: 50%;
+        background-color: #071c26;
+        cursor: pointer;
+
+        p {
+          font-family: "Mukta Mahee";
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          color: white;
+        }
+      }
+    }
+
+  }
+
+  .parallax {
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i0.wp.com/shorensteincenter.org/wp-content/uploads/2017/10/Blue-email-image.jpg?fit=636%2C310&ssl=1");
+  }
+}
+
+button {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+label {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.numb {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 15rem;
+  background: black;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+
+    h3 {
+      color: white;
+      margin-top: 3rem;
+      font-family: "Andale Mono";
+      text-transform: capitalize;
+      color: white;
+    }
+
+    p {
+      color: white;
+      margin-left: 2.5rem;
+      height: 100%;
+      width: 80%;
+      margin-top: 2rem;
+      font-size: 8rem;
+      font-family: "PingFang TC";
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .special-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40rem;
+
+
+    .first-offer {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      width: 70%;
+      height: 55%;
+
+
+      .first-img {
+        margin-left: 0;
+        height: 20rem;
+        width: 100%;
+      }
+
+      #first-imgg {
+        width: 100%;
+      }
+
+      .first-text {
+        margin-left: 0;
+      }
+    }
+
+    .second-offer {
+      width: 100%;
+      height: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+
+
+      .second-first-ad {
+        margin-left: 0;
+      }
+
+      .second-second-ad {
+        margin-left: 0;
+      }
+
+      .second-third-ad {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .numb {
+    div {
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin-left: 0;
+        font-size: 7rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 900px) {
+  .numb {
+    div {
+      p {
+        margin-left: 0;
+        font-size: 6rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 775px) {
+  h1{
+    font-size: 2rem !important;
+  }
+
+  .litrage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60rem;
+    margin-bottom: 5rem;
+
+    .litrage-fish {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: column;
+      height: 70%;
+      width: 100%;
+
+      label {
+        color: rgba(255, 255, 255, 0.51);
+        font-family: "Mukta Mahee";
+        font-size: 1.2rem;
+        margin-bottom: .4rem;
+      }
+
+      h2 {
+        font-family: "Arial Black";
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+      }
+    }
+
+    .litrage-aquarium {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: column;
+      padding-top: 5rem;
+      height: 85%;
+      width: 100%;
+
+      h2 {
+        font-family: "Arial Black";
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .special-offer {
+    height: 100rem;
+
+    .first-offer {
+      width: 25rem;
+      height: 25%;
+
+      .first-img {
+        height: 20rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 75%;
+      flex-direction: column;
+
+      div {
+        width: 25rem;
+
+        img {
+          width: 100%;
+          height: 20rem;
+        }
+      }
+
+    }
+  }
+
+  .top-first,
+  .top-second,
+  .top-third,
+  .top-fourth,
+  .top-fifth {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30rem;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      width: 80%;
+
+      h2 {
+        color: #b8912f;
+        text-transform: uppercase;
+        font-family: "Mukta Mahee";
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-family: Skia;
+        font-size: 1.1rem;
+        text-indent: 1rem;
+      }
+
+      p:first-letter {
+        color: #b8912f;
+        text-transform: uppercase;
+        font-family: Century Gothic;
+        font-size: 1.6rem;
+      }
+    }
+
+    img {
+      width: 50%;
+      margin-right: 0;
+
+    }
+
+  }
+
+  .numb {
+    div {
+      p {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .h1 {
+    font-size: 2rem !important;
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          margin-top: 2rem;
+          font-weight: 600;
+        }
+
+        button {
+          margin-top: 2.6rem;
+          width: 40%;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+
+  }
+
+
+  .numb {
+    div {
+      p {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .h1 {
+    font-size: 1.8rem !important;
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: 1.4rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          margin-top: 2rem;
+          font-weight: 600;
+        }
+
+        button {
+          margin-top: 2.6rem;
+          width: 40%;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+
+  }
+
+
+  .numb {
+    div {
+      h3 {
+        font-size: .9rem;
+      }
+
+      p {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .special-offer {
+    height: 100rem;
+
+    .first-offer {
+      width: 23rem;
+      height: 25%;
+
+      .first-img {
+        height: 18rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 75%;
+      flex-direction: column;
+
+      div {
+        width: 23rem;
+
+        img {
+          width: 100%;
+          height: 18rem;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  #fStepHeader{
+    width: 2rem;
+    height: 2rem;
+  }
+
+
+
+  .h1 {
+    font-size: 1.7rem !important;
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-top: 2rem;
+          font-weight: 600;
+        }
+
+        button {
+          margin-top: 2.6rem;
+          width: 35%;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+
+  }
+
+  .numb {
+    div {
+      h3 {
+        font-size: .9rem;
+      }
+
+      p {
+        font-size: 3.5rem;
+      }
+    }
+  }
+  .offer-header {
+    h1 {
+      font-family: "Arial Black";
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+
+  .special-offer {
+    height: 90rem;
+
+    .first-offer {
+      width: 23rem;
+      height: 23%;
+
+      .first-img {
+        height: 17rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 23rem;
+
+        img {
+          width: 100%;
+          height: 17rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .numb {
+    div {
+      h3 {
+        font-size: .8rem;
+      }
+
+      p {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+
+  .numb {
+    height: 40rem;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 6rem;
+        font-size: 5rem;
+      }
+    }
+  }
+  .offer-header {
+    h1 {
+      font-family: "Arial Black";
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+  .special-offer {
+    height: 85rem;
+
+    .first-offer {
+      width: 20rem;
+      height: 23%;
+
+      .first-img {
+        height: 15rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 20rem;
+
+        img {
+          width: 100%;
+          height: 15rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.6rem !important;
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          margin-top: 2rem;
+          font-weight: 600;
+        }
+
+        button {
+          margin-top: 2.6rem;
+          width: 30%;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+
+  }
+  .offer-header {
+    h1 {
+      font-family: "Arial Black";
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+
+  .special-offer {
+    height: 90rem;
+
+    .first-offer {
+      width: 20rem;
+      height: 23%;
+
+      .first-img {
+        height: 15rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 20rem;
+
+        img {
+          width: 100%;
+          height: 15rem;
+        }
+      }
+    }
+  }
+  .litrage {
+    .litrage-aquarium {
+      #control {
+        padding-left: 0;
+
+
+        input {
+          display: none;
+        }
+
+        label {
+          width: 4.5rem;
+          height: 3.1rem;
+
+          span {
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+
+        }
+      }
+    }
+  }
+  .numb {
+    height: 40rem;
+    flex-direction: column;
+
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 5.5rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+
+
+  .special-offer {
+    height: 90rem;
+
+    .first-offer {
+      width: 19rem;
+      height: 23%;
+
+      .first-img {
+        height: 14rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 19rem;
+
+        img {
+          width: 100%;
+          height: 14rem;
+        }
+      }
+    }
+  }
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 5.5rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 440px) {
+  .h1 {
+    font-size: 1.5rem !important;
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-top: 2rem;
+          font-weight: 600;
+        }
+
+        button {
+          margin-top: 2.6rem;
+          width: 25%;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+
+  }
+  .offer-header {
+    h1 {
+      font-family: "Arial Black";
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+
+  .special-offer {
+    height: 90rem;
+
+    .first-offer {
+      width: 18rem;
+      height: 23%;
+
+      .first-img {
+        height: 13rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 18rem;
+
+        img {
+          width: 100%;
+          height: 13rem;
+        }
+      }
+    }
+  }
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 5rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .offer-header {
+    h1 {
+      font-family: "Arial Black";
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+  .special-offer {
+    height: 75rem;
+
+    .first-offer {
+      width: 17rem;
+      height: 23%;
+
+      .first-img {
+        height: 12rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 17rem;
+
+        img {
+          width: 100%;
+          height: 12rem;
+        }
+      }
+    }
+  }
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 4rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .litrage {
+    .litrage-aquarium {
+      #control {
+        padding-left: 0;
+
+
+        input {
+          display: none;
+        }
+
+        label {
+          width: 4rem;
+          height: 3.1rem;
+
+          span {
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+
+        }
+      }
+    }
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: .9rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-top: 2rem;
+          font-weight: 600;
+
+          button {
+            margin-top: 2.6rem;
+            width: 25%;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 3rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        button {
+          margin-top: 2.6rem;
+          width: 30%;
+
+          p {
+            font-size: 1rem;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  .litrage {
+    .litrage-aquarium {
+      #control {
+        padding-left: 0;
+
+
+        input {
+          display: none;
+        }
+
+        label {
+          width: 3.5rem;
+          height: 3.1rem;
+
+          span {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+
+        }
+      }
+    }
+  }
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 2.5rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: .9rem !important;
+  }
+  .litrage {
+    .litrage-aquarium {
+      #control {
+        padding-left: 0;
+
+
+        input {
+          display: none;
+        }
+
+        label {
+          width: 3.5rem;
+          height: 3.1rem;
+
+          span {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+
+        }
+      }
+    }
+  }
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 2rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+  .special-offer {
+    height: 75rem;
+
+    .first-offer {
+      width: 14rem;
+      height: 23%;
+
+      .first-img {
+        height: 10rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 14rem;
+
+        img {
+          width: 100%;
+          height: 10rem;
+        }
+      }
+    }
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        button {
+          margin-top: 2.6rem;
+          width: 35%;
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: .9rem !important;
+  }
+  .litrage {
+    .litrage-aquarium {
+      #control {
+        padding-left: 0;
+
+
+        input {
+          display: none;
+        }
+
+        label {
+          width: 3.5rem;
+          height: 3.1rem;
+
+          span {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+
+        }
+      }
+    }
+  }
+  .numb {
+    div:nth-child(3) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      background: black;
+
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-left: 2rem;
+        font-size: 4.7rem;
+      }
+    }
+  }
+  .special-offer {
+    height: 75rem;
+
+    .first-offer {
+      width: 14rem;
+      height: 23%;
+
+      .first-img {
+        height: 10rem;
+
+        #first-imgg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .second-offer {
+      height: 77%;
+      flex-direction: column;
+
+      div {
+        width: 14rem;
+
+        img {
+          width: 100%;
+          height: 10rem;
+        }
+      }
+    }
+  }
+  .email-cover {
+    .email {
+      .email-text {
+        h3 {
+          font-size: .8rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-top: 2rem;
+          font-weight: 600;
+
+          button {
+            margin-top: 2.6rem;
+            width: 35%;
+
+            p {
+              font-size: 1rem;
+
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
